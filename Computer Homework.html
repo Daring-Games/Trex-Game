@@ -1,0 +1,178 @@
+<!----------------------------------------------
+=============== HTML 3 PROJECT =================
+=* Created By Sameer Karna (Class 8 - Bahaar) *=
+------------- MAIN HTML DOCUMENT ---------------
+_________Created on 21st October 2020________-->
+
+
+
+    <!-- This is used to specify the HTML Document type. -->
+        <!DOCTYPE html>
+
+            <!-- HTML Tag to start an HTML Coding-->
+                <html>
+                    <!-- HTML Head -->
+                        <head>
+                            <!-- Title of the Webpage -->
+                                <title>Daring - Info</title>
+                        </head>
+
+                    <!-- CSS to style the WebPage -->
+                        <style>
+
+                            /* Webpage Background */
+                                body {
+                                    background-attachment: fixed;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+        
+                            /* Class for buttons in the Webpage */
+                                .button {
+                                    background-color: #88300a;
+                                    text-align: center;
+                                    cursor: pointer;
+                                    border: none;
+                                    margin: 5px -3px;
+                                    padding: 15px 32px;
+                                    font-family: sans-serif;
+                                    color: white;
+                                    font-size: 16px;
+                                    transition: 500ms;
+                                }
+
+                            /* If mouse is over button */
+                                .button:hover{
+                                    box-shadow: 0px 12px 12px #cfa87e, 10px 10px 12px #cfa87e;
+                                }
+
+                            /* Second Transition for shadow in buttons */
+                                #transition2 {
+                                    box-shadow: -10px 17px 20px 0 rgba(12, 12, 12, 0.700), -10px 15px 100px 0 rgba(0, 0, 0, 0.700);
+                                    transition:  500ms;
+                                    width: 800px
+                                }
+
+                            /*If mouse is over the image then transition plays. */
+                                #transition2:hover {
+                                    box-shadow: -10px 17px 20px 0 rgb(12, 12, 12, 0), -10px 15px 100px 0 rgba(0, 0, 0, 0);
+                                }
+
+                            /* Style for Heading */
+                                h1 {
+                                    text-shadow: 3px 3px 5px #ccab87, 3px 2px 5px #ccab87, 3px 2px 6px #ccab87;
+                                }
+
+                            /* Transition for fade text in Lotus Temple image */
+                                #transition {
+                                    box-shadow: -10px 17px 20px 0 rgba(12, 12, 12, 0.700), -10px 15px 100px 0 rgba(0, 0, 0, 0.700);
+                                    transition:  500ms;
+                                    width: 800px
+                                }
+
+                            /*If mouse is over the image then transition plays. */
+                                #transition:hover {
+                                    box-shadow: -10px 17px 20px 0 rgb(12, 12, 12, 0), -10px 15px 100px 0 rgba(0, 0, 0, 0);
+                                    width: 800px
+                                }
+
+                            /* To center the lotus temple image */
+                                .center {
+                                    display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                }
+
+                            /* A container of transition 1 which will display text */
+                                .container {
+                                    position: relative;
+                                    width: 800px
+                                }
+
+                            /* Overlay which has the properties of the container */
+                                .overlay {
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    height: 100%;
+                                    width: 100%;
+                                    opacity: 0;
+                                    transition: .7s ease;
+                                    background-color:#A8390B;
+                                }
+
+                            /* When transition comes into effect and when mouse is over the container */
+                                .container:hover .overlay {
+                                    opacity: 1;
+                                }
+
+                            /* Text which will be in the container */
+                                .text {
+                                    color: white;
+                                    font-size: 60px;
+                                    text-align: center;
+                                    font-family: Georgia;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    -ms-transform: translate(-50%, -50%); 
+                                }
+
+                        </style>
+
+                    <!-- Body which has all the headings, images and paras of the webpage -->
+                        <body background = "design5.png"><body>
+
+                            <!-- Heading of a webpage -->
+                                <h1 style="text-align: center; font-size: 70px; color: #A8390B">LOTUS TEMPLE</h1>
+                            
+                            <!-- All the buttons in the webpage -->
+                                <button class="button" onclick="alert('You are in the Home Page')">HOME</button> 
+                                <button class="button" onclick="alert('This part of site is under construction, but to see INFO anyway, click on NEW INFO')">INFO</button>  
+                                <a href="Sameer.html"><button class="button">ABOUT ME</button></a> 
+                                <a href="New Info.html"><button class="button">NEW INFO</button></a>
+                                <a href="https://daring-games.github.io/ROBO-WARS-3D/" target="_blank"><button class="button">FEATURED</button></a> 
+                            
+                            <!--  Image of Lotus Temple and its division -->
+                                <div id="transition" class="center">
+                                    <div class="container">
+                                        <img src="lotus_temple.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 50px;" width = 800px alt="hello">
+                                            <div class="overlay">
+                                                <div class="text">LOTUS TEMPLE</div>
+                                            </div>
+                                    </div>
+                                </div>
+                            <!-- Paragraph of a webpage and its content -->
+                                <p style="color: #ffffff; font-family: Centaur; font-size: 30px; text-align: justify;">
+                                    <b>The Lotus Temple</b> was consecrated and opened to the public in <i>December 1986</i>. It was designed by <b>Iranian architect Fariborz Sahba</b>, 
+                                    who won acclaim for the project even before the temple was completed. It subsequently received several awards.The famous Lotus Temple 
+                                    is located in <b>New Delhi, India</b>, is a <b>Baha'i House of Worship</b>. Notable for its 
+                                    flower like shape, it serves as the Mother Temple of the Indian Subcontinent and has become the prominent attraction of the city. 
+                                    Like all Baha'i Houses of Worship, the Lotus Temple is open to all, regardless of religion or any other qualification. he building 
+                                    is composed of 27 free-standing marble-clad <b>"petals"</b> arranged in clusters of three to form nine sides, with nine doors opening
+                                    onto a central hall with a height of slightly over <b>34.27 metres</b> and a capacity of <b>2,500 people</b>. A <b>2001 CNN</b> report referred to 
+                                    it as the most visited building in the world.
+                                </p>
+
+                            <!-- This I used to add a space between the 2 paragraphs -->
+                                <p></p>
+
+                            <!-- Another paragraph -->
+                                <p style="color: #ffffff; font-family: Centaur; font-size: 30px; text-align: justify;">
+                                    To download a <b>High - Resolution Image</b> of the Majestic Lotus Temple, click on the <b>Download Button</b> below!
+                                </p>
+
+                            <!-- Download Button for the high resolution Lotus Temple Image -->
+                                <a href="The Lotus Temple.jpg" download="The Majestic Lotus Temple"><button class="button">DOWNLOAD IMAGE</button></a>
+
+                        </body>
+                </html>
+
+
+
+<!--==================================
+------------ END OF HTML -------------
+===================================-->
